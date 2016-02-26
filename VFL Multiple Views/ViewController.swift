@@ -13,6 +13,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    
+    let button1 = UIButton()
+        button1.translatesAutoresizingMaskIntoConstraints = false
+        button1.backgroundColor = UIColor.redColor()
+        button1.setTitle("Button1", forState: .Normal)
+        view.addSubview(button1)
+        
+    let button2 = UIButton()
+        button2.translatesAutoresizingMaskIntoConstraints = false
+        button2.backgroundColor = UIColor.blueColor()
+        button2.setTitle("Button2", forState: .Normal)
+        view.addSubview(button2)
+        
+        
+    
+    
+    
     }
 
     override func didReceiveMemoryWarning() {
