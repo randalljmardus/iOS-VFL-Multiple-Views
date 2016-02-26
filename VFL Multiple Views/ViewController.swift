@@ -32,8 +32,8 @@ class ViewController: UIViewController {
         
         NSLayoutConstraint.activateConstraints(constraints1)
         
-        button2.heightAnchor.constraintEqualToConstant(100).active = true
-        
+        let button2Height = NSLayoutConstraint.constraintsWithVisualFormat("V:[button2(100)]", options: .AlignAllTop, metrics: nil, views: views)
+        NSLayoutConstraint.activateConstraints(button2Height)
         
     
     
