@@ -28,9 +28,11 @@ class ViewController: UIViewController {
         
         let views = ["button1" : button1, "button2" : button2]
         
-        let constraints1 = NSLayoutConstraint.constraintsWithVisualFormat("|[button1][button2]", options: .AlignAllTop, metrics: nil, views: views)
+        let constraints1 = NSLayoutConstraint.constraintsWithVisualFormat("|[button1][button2]", options: .AlignAllBaseline, metrics: nil, views: views)
         
         NSLayoutConstraint.activateConstraints(constraints1)
+        
+        button2.heightAnchor.constraintEqualToConstant(100).active = true
         
         
     
