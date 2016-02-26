@@ -26,6 +26,12 @@ class ViewController: UIViewController {
         button2.setTitle("Button2", forState: .Normal)
         view.addSubview(button2)
         
+        let views = ["button1" : button1, "button2" : button2]
+        
+        let constraints1 = NSLayoutConstraint.constraintsWithVisualFormat("|[button1][button2]", options: .AlignAllTop, metrics: nil, views: views)
+        
+        NSLayoutConstraint.activateConstraints(constraints1)
+        
         
     
     
